@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('seats', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('store_id')->references('id')->on('stores');
+            $table->foreignId('store_id')->references('id')->on('users');
             $table->string('name');
             $table->integer('num');
             $table->string("seats_name");

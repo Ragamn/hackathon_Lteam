@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('store_id')->references('id')->on('stores');
+            $table->foreignId('store_id')->references('id')->on('users');
             $table->foreignId('product_id')->references('id')->on('products');
             $table->boolean("drinking_flag")->default(0);
             $table->boolean("delete_flag")->default(0);
