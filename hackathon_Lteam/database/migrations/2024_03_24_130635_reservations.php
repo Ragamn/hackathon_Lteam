@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string("phone_num");
             $table->string("seat_name");
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 

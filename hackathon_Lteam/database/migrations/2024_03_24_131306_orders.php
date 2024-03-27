@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer("quantity");
             $table->boolean("delete_flag")->default(0);
             $table->string("order_status");
-            $table->timestamp("created_at")->useCurrent();
+            $table->timestamps();
         });
     }
 
