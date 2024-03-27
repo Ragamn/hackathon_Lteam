@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('num');
             $table->string("seats_name");
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 
