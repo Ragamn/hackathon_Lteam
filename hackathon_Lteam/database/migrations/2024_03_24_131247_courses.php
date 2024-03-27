@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('course_id')->references('id')->on('products');
             $table->foreignId('product_id')->references('id')->on('products');
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 
