@@ -1,0 +1,62 @@
+#body {
+    width: 1366px;
+    height: 1024px;
+    background-color: #dcdcdc;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.table-layout {
+    margin: 5% 0 0 15%;
+    width: 70%;
+    height: 60%;
+    border-collapse: collapse;
+}
+
+.name {
+    width: 50%;
+}
+
+.num {
+    width: 15%;
+}
+
+.prace {
+    width: 35%;
+}
+
+table td {
+    text-align: center;
+    padding: 2.5%;
+    border: 1px solid black;
+    height: 10%;
+}
+
+div div {
+    margin-top: 3%;
+    height: 7%;
+}
+
+div .back {
+    font-size: 20px;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+
+div .order {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+    margin-left: 60%;
+}
