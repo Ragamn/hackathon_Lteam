@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SeatController;
 use Illuminate\Support\Facades\Auth;
@@ -33,3 +34,4 @@ Route::controller(SeatController::class)->group(function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/category', [CategoryController::class, 'index'])->name('category');
