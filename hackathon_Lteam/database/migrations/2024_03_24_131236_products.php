@@ -22,6 +22,7 @@ return new class extends Migration
             $table->integer("price");
             $table->integer("price_tax");
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 

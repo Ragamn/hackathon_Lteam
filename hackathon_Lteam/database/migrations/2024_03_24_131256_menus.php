@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('product_id')->references('id')->on('products');
             $table->boolean("drinking_flag")->default(0);
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 

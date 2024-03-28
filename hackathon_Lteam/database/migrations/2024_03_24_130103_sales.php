@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('total_sales');
             $table->string('week');
             $table->timestamp("date")->useCurrent();
+            $table->timestamps();
         });
     }
 

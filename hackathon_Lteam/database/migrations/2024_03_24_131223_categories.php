@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->boolean("delete_flag")->default(0);
+            $table->timestamps();
         });
     }
 
