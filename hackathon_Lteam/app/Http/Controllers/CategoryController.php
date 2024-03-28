@@ -31,6 +31,7 @@ class CategoryController extends Controller
             'name' => 'required|unique:categories|max:255',
         ]);
 
+        
         // カテゴリーを作成して保存
         Category::create([
             'name' => $request->name,
