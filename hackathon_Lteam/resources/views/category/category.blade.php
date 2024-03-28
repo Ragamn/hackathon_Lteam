@@ -1,9 +1,22 @@
-<!-- 登録フォーム -->
-<form method="POST" action="{{ route('categories.store') }}">
-    @csrf
-    <input type="text" name="name" placeholder="カテゴリ名">
-    <button type="submit">登録</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カテゴリー管理
+        
+    </title>
+</head>
+<body>
+    <form method="POST" action="{{ route('categories.store') }}">
+        @csrf
+        <label for="name">カテゴリー名:</label><br>
+        <input type="text" id="name" name="name" placeholder="カテゴリー名を入力してください"><br><br>
+        <button type="submit">登録</button>
+    </form>
+</body>
+</html>
+
 
 <!-- カテゴリー一覧テーブル -->
 <table>
