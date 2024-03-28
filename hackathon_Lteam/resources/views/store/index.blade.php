@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{asset('/css/index.css')}}">
   <title>Document</title>
 </head>
 <body>
+  <div id="body">
+  <img src="{{asset('/img/logo.png')}}" alt="logo" id="logo">
 <table border="">
       <tr>
         <th>テーブル番号</th>
@@ -24,5 +27,6 @@
       </tr>
       @endforeach
     </table>
+    </div>
 </body>
 </html>
