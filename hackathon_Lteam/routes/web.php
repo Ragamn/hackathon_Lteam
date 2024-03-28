@@ -27,6 +27,7 @@ Route::controller(productController::class)->group(function () {
 
 Route::controller(SeatController::class)->group(function () {
     Route::get('/seat', 'index');
+    Route::get('/seat/register','add_session');
 });
 
 Auth::routes();
