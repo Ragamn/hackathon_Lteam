@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\CategoryController;
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SeatController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +18,17 @@ use App\http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(productController::class)->group(function () {
+    Route::get('/order', 'index');
+    Route::post('/order', 'addCart');
+    Route::get('/show/cart', 'showCart');
+});
+
+Route::controller(SeatController::class)->group(function () {
+    Route::get('/seat', 'index');
+    Route::get('/seat/register','add_session');
 });
 
 Auth::routes();
