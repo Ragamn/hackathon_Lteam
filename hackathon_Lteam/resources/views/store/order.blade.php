@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf_token" content="{{csrf_token()}}">
+  <link rel="stylesheet" href="{{asset('/css/order.css')}}">
   <title>Document</title>
 </head>
 <body>
+<div id="body">
+  <img src="{{asset('/img/logo.png')}}" alt="logo" id="logo">
 <table border="" id="products">
       <tr>
         <th>id</th>
@@ -44,5 +47,6 @@
 
     </div>
     <script src="{{asset('/js/order.js')}}"></script>
+    </div>
 </body>
 </html>

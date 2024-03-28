@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('/css/category-list-style.css')}}">
     <title>カテゴリー管理
         
     </title>
 </head>
 <body>
+  
+    <img src="{{asset('/img/logo.png')}}" alt="logo" id="logo">
     <form method="POST" action="{{ route('categories.store') }}">
         @csrf
         <label for="name">カテゴリー名:</label><br>

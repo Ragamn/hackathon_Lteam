@@ -40,4 +40,9 @@ class CategoryController extends Controller
         // カテゴリー一覧を再度表示
         return $this->index()->withErrors(['success' => 'カテゴリーを作成しました！']);
     }
+    
+    public function delete(Request $request){
+        $id = $request->id;
+        Category::update()->
+    }
 }
