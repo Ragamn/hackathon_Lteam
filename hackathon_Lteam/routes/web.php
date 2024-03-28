@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SeatController;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +17,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::controller(productController::class)->group(function () {
+    Route::get('/order', 'index');
+    Route::post('/order', 'addCart');
+    Route::get('/show/cart', 'showCart');
+});
+
+Route::controller(SeatController::class)->group(function () {
+    Route::get('/seat', 'index');
 });
 
 Auth::routes();
