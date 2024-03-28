@@ -1,0 +1,56 @@
+#body {
+    width: 1366px;
+    height: 1024px;
+    background: linear-gradient(to bottom, white, yellow);
+    background-attachment: fixed;
+}
+
+p {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.table_layout {
+    table-layout: auto;
+    width: 60%;
+}
+
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.tableNumber {
+    width: 10%;
+}
+
+.tableSyubetu {
+    width: 40%;
+}
+
+.tableNinzu {
+    width: 40%;
+}
+
+.button {
+    width: 10%;
+}
+
+button {
+    width: 90%;
+    height: 3em;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
