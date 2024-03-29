@@ -9,6 +9,9 @@ use App\Models\Product;
 class SeatController extends Controller
 {
     function index(){
+        if(session()->get('admin') == 1){
+            return view('store.selection');
+        }
         $items = Seat::all();
         return view('store.index',['items' => $items]);
     }
