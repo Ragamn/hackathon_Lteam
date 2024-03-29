@@ -32,8 +32,11 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    protected function authenticated(\Illuminate\Http\Request $request, $user)
     {
-        $this->middleware('guest')->except('logout');
+    if ($user->admin_flag == 1) {
+        session(['admin' => 1]);
+    }
+    $this->middleware('guest')->except('logout');
     }
 }
