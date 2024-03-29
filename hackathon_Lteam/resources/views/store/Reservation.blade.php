@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Reservation List-style.css">
+    <link rel="stylesheet" href="{{asset('/css/Reservation-style.css')}}s">
     <title>予約一覧</title>
 </head>
 <body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/selection2-style.css">
+    <link rel="stylesheet" href="{{asset('/css/selecyion2-style.css')}}">
     <title>管理者(店舗)</title>
 </head>
 <body>
